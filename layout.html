@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, html5, portfolio, profile card, about me">
+    <meta name="description" content="creating a portfolio website by using HTML only">
+    <meta name="author" content="Sakibul">
+    <title>Portfoli</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            
+        }
+        h1, h2, h3{
+            text-align: center;
+        }
+        footer{
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- ============ header start =============== -->
+      <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+      <!-- ============ header end =============== -->
+      <hr>
+
+      <!-- ================= main start =================== -->
+      <main>
+        <!-- ===== About Me section ====== -->
+        <section id="about_me">
+            <h2>About Me</h2>
+            <p>Hello, my name is <strong>Sakibul</strong>. I am from West Bengal. I did my graduation on BBA in 2019. After that I was preparing for Govt. exams for 2 years. During preparation I realised that somewhere I have interest in tech. Then I have watched lot of videos from YouTube, and I have seen that cooding is that thing which I can learn and get into tech field. Then I joined AccioJob platform and learning cooding. So now <strong>I am a aspirant of Full Stack Development Career Program in AccioJob</strong>.</p>
+        </section>
+        <br><br><br>
+        <!-- ====== Contact Me section ===== -->
+        <section>
+            <h2 >Contact Me</h2>
+            <form  method="post">
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <div>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Type Your Name" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Type Your Email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="phNo">Phone No: </label>
+                        <input type="tel" name="phNo" id="phNo" placeholder="10 digit ph no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="date_of_appoint">Date of Appointment: </label>
+                        <input type="date" name="date_of_appoint" id="date_of_appoint" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label >Contact via: </label>
+                        <input type="radio" name="contact_medium" id="whatsapp">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="radio" name="contact_medium" id="call">
+                        <label for="call">Call</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="time_slot">Time Slot: </label>
+                        <input type="checkbox" name="morning" id="morning" required>
+                        <label for="morning">9:00 AM</label>
+                        <input type="checkbox" name="afternoon" id="afternnon" required>
+                        <label for="afternnon">4:00 PM</label>
+                        <input type="checkbox" name="evening" id="evening" required>
+                        <label for="evening">7:30 PM</label>
+                    </div>
+                    <br>
+                    <!-- ========= Submit and Reset button ========= -->
+                    <div>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <br><br><br>
+        <!-- ======== Projects section ======== -->
+        <section>
+            <h3>Projects</h3>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Links</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Profile Card</td>
+                    <td>In this project I am using HTML and CSS only</td>
+                    <td><a href="https://github.com/Sakibul-05/Profile-Card.git" target="_blank">https://github.com/Sakibul-05/Profile-Card.git</a></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Prime Number</td>
+                    <td>Finding prime numbers from an Array</td>
+                    <td><a href="https://onlinegdb.com/erMEe5BDH" target="_blank">https://onlinegdb.com/erMEe5BDH</a></td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Pascal Triangle</td>
+                    <td>Creating a Pascal Triangle using ArrayList</td>
+                    <td><a href="https://onlinegdb.com/VeU2c4gX9" target="_blank">https://onlinegdb.com/VeU2c4gX9</a></td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Subarray</td>
+                    <td>Split an Array into two subarrays such way tha sum of each subarray is same</td>
+                    <td><a href="https://onlinegdb.com/LLReErZUV" target="_blank">https://onlinegdb.com/LLReErZUV</a></td>
+                </tr>
+            </table>
+        </section>
+
+      </main>
+      <br><br><br><br>
+      <!-- ================= main end =================== -->
+
+      <!-- ================ footer start =============== -->
+      <footer id="contact">
+        <h3>You can also contact with me on: </h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/sk-sakibul-18021a204/" target="_blank">linkedin</a></li>
+            <li><a href="https://www.facebook.com/sakibul.islam.31105/" target="_blank">Facebook</a></li>
+            <li><a href="https://github.com/Sakibul-05" target="_blank">Github</a></li>
+        </ul>
+      </footer>
+      <!-- ================ footer end =============== -->
+    </div>
+  </body>
+</html>
